@@ -19,6 +19,7 @@ def has_tool_message(result):
             if hasattr(msg, "tool_calls") and msg.tool_calls:
                 return True
     return False
+
 LAST=-1
 def extract_ans_metadata(result: Dict[str, Any]) -> Dict[str, Any]:
     audit = [] #{"Source": "abcd.pdf", "Page_Num": 2}
